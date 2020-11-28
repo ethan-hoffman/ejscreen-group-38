@@ -25,6 +25,8 @@ ces_clean <- ces %>% clean_names()
 # ggplot
 ggplot(data = ces_clean, aes(x = white_percent, y = ces_3_0_score)) +
   geom_hex() +
-  labs(x = "Percent White", y = "Pollution Burden Score")
+  labs(x = "Percent White", y = "Pollution Burden Score") +
+  scale_fill_gradient(low = "darkorchid4", high = "magenta") +
+  theme_minimal()
 ```
 
