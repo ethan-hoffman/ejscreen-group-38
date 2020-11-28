@@ -1,0 +1,23 @@
+---
+title: "Group 38 CA pollution burden"
+author: "Ethan Hoffman and Katelyn Toigo"
+date: "11/28/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(janitor)
+library(here)
+```
+
+## Partner 1 - Section A.g. (Read in the CSV file and convert column headers to lower snake case).
+```{r}
+#Read in the ces3demographics.csb data as an object called ces.
+ces <- read_csv(here("data", "ces3demographics.csv"))
+
+#Convert column headers to lower_snake_case using the janitor package.
+ces_clean <- ces %>% clean_names()
+```
+
