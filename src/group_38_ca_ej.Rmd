@@ -30,3 +30,4 @@ ggplot(data = ces_clean, aes(x = white_percent, y = ces_3_0_score)) +
   theme_minimal()
 ```
 
+The overall trend is that as the percent of white individuals increases in a neighborhood the pollution burden score decreases.  The trend appears to be negatively correlated.
